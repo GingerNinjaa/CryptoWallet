@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms" 
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:wallet="clr-namespace:CryptoWallet.Modules.Wallet"
+       Title="CryptoWallet"
+       x:Class="CryptoWallet.AppShell">
+
+   <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+       <ShellContent Title="Portfolio"
+                     ContentTemplate="{DataTemplate wallet:WalletView}"/>
+   </FlyoutItem>
+</Shell>
